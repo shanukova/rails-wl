@@ -1,5 +1,7 @@
-<div class="d-flex flex-column m-5">
-  <p class="d-flex justify-content-end  "><span class="badge bg-info text-dark"><%= pluralize(@list.movies.size, 'movie') %></span></p>
+
+
+<div class="d-flex flex-column all-lists" style="background-image: url('<%= cl_image_path @list.photo.key, width: 1200, crop: :fill %>');">
+  <p><span class="badge bg-info text-dark m-3"><%= pluralize(@list.movies.size, 'movie') %></span></p>
   <h2 class="text-center"><span class="badge bg-secondary"><%= @list.name %></span></h2>
 </div>
 
